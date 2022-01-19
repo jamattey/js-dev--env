@@ -4,7 +4,8 @@
   "description": "A full-fledged JavaScript environment for end-to-end js web development",
   "scripts": {
     "prestart": "node buildScripts/startMessage.js",
-    "start": "node buildScript/srcServer.js"
+    "start": "node buildScript/srcServer.js",
+    "share": "vercel"
   },
   "author": "James Amattey",
   "license": "MIT",
