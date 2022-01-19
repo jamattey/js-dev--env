@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A full-fledged JavaScript environment for end-to-end js web development",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
-    "start": "node buildScript/srcServer.js",
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "babel-node buildScript/srcServer.js",
     "share": "vercel"
   },
   "author": "James Amattey",
