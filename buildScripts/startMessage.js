@@ -1,2 +1,2 @@
-var startMessage = require ('startMessage');
-console.log(startMessage.green('Starting your app in dev mode....'));
+var chalk = require ('chalk');
+console.log(chalk.green('Starting your app in dev mode....'));
