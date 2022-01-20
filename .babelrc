@@ -6,7 +6,7 @@
         [
           "@babel/preset-env",
           {
-            "targets": "> 0.25%, not dead"
+            "targets": "> 0.25%, not dead" // This targets a quarter of browsers with continuous support.//
           }
         ]
       ]
