@@ -1,10 +1,18 @@
-import express from "express";
-import path from "path";
-import open from "open";
+import express from 'express';
+import path from 'path';
+import open from 'open';
+import webpack from 'webpack';
+import config from '../webpack.config.dev';
 
 
 const port = 3100;
 const app = express();
+const compiler = webpack(config); //creates a reference to webpack compiler
+
+// tell express to use webpack dev middleware with the compiler
+app.use (require ('webpack-dev-middleware'(compiler, {
+  publicPath: config.output.publicPath
+})));
 
 app.get ('/', function (req, res){
   res.sendFile(path.join(__dirname, '../src/index.html'));
