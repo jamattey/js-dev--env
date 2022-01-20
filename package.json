@@ -4,7 +4,8 @@
   "description": "A full-fledged JavaScript environment for end-to-end js web development",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "babel-node buildScript/srcServer.js",
+    "start": "npm-run-all --parallel open:src lint:watch",
+    "open:src": "babel-node buildScript/srcServer.js",
     "share": "vercel",
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch"
