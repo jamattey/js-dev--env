@@ -8,7 +8,9 @@
     "open:src": "babel-node buildScript/srcServer.js",
     "share": "vercel",
     "lint": "esw webpack.config.* src buildScripts --color",
-    "lint:watch": "npm run lint -- --watch"
+    "lint:watch": "npm run lint -- --watch",
+    "security-check": "nsp check",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
   },
   "author": "James Amattey",
   "license": "MIT",
