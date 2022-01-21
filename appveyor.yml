@@ -2,7 +2,7 @@
 environment:
   matrix:
   #node.js
-  -nodejs_version: "16"
+  -nodejs_version: "17"
 # Install Scripts. (runs after repo cloning)
 
 install:
