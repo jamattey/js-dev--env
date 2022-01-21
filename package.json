@@ -16,6 +16,7 @@
   "author": "James Amattey",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.25.0",
     "whatwg-fetch": "3.6.2"
   },
   "devDependencies": {
